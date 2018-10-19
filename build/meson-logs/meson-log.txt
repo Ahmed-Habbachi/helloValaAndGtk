@@ -1,0 +1,38 @@
+Build started at 2018-10-19T21:17:48.581609
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.46.1
+Source dir: /home/ahmed/Workspace/gtk-hello
+Build dir: /home/ahmed/Workspace/gtk-hello/build
+Build type: native build
+Project name: com.github.Ahmed-Habbachi.helloValaAndGtk
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/ahmed/Workspace/gtk-hello/build/meson-private/sanitycheckc.c -o /home/ahmed/Workspace/gtk-hello/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ahmed/Workspace/gtk-hello/build/meson-private/sanitycheckc.exe
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Running compile:
+Working directory:  /tmp/tmpqg84xr24
+Command line:  valac /tmp/tmpqg84xr24/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Native Vala compiler: valac (valac 0.40.10)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
+Native dependency gtk+-3.0 found: YES 3.22.30
+Build targets in project: 1
+Found ninja-1.8.2 at /usr/bin/ninja
