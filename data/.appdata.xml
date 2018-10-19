@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Your Name <you@email.com> -->
+<component type="desktop">
+  <id>com.github.Ahmed-Habbachi.helloValaAndGtk</id>
+  <metadata_license>CC0</metadata_license>
+  <name>Hello Vala And Gtk</name>
+  <summary>This is my simple training app to try out vala and GTK.</summary>
+  <description>
+    <p>This is my simple training app to try out vala and GTK. Just writing this in my jurney to learn the basics of vala and GTK</p>
+  </description>
+    <custom>
+     <value key="x-appcenter-color-primary">#603461</value>
+     <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+     <value key="x-appcenter-suggested-price">5</value>
+  </custom>
+</component>
