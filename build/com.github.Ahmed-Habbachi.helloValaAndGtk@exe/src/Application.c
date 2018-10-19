@@ -27,6 +27,7 @@
 #include <glib-object.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
+#include <glib/gi18n-lib.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -76,7 +77,7 @@ my_app_construct (GType object_type)
 	self = (MyApp*) g_object_new (object_type, "application-id", "com.github.Ahmed-Habbachi.helloValaAndGtk", "flags", G_APPLICATION_FLAGS_NONE, NULL);
 #line 24 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	return self;
-#line 80 "Application.c"
+#line 81 "Application.c"
 }
 
 
@@ -85,7 +86,7 @@ my_app_new (void)
 {
 #line 24 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	return my_app_construct (TYPE_MY_APP);
-#line 89 "Application.c"
+#line 90 "Application.c"
 }
 
 
@@ -100,7 +101,7 @@ my_app_real_activate (GApplication* base)
 #line 31 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	self = (MyApp*) base;
 #line 32 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
-	_tmp0_ = (GtkLabel*) gtk_label_new ("Hello Again Wolrd!");
+	_tmp0_ = (GtkLabel*) gtk_label_new (_ ("Hello Again Wolrd!"));
 #line 32 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	g_object_ref_sink (_tmp0_);
 #line 32 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
@@ -116,7 +117,7 @@ my_app_real_activate (GApplication* base)
 #line 36 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	g_object_set ((GtkWindow*) main_window, "default-width", 300, NULL);
 #line 37 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
-	gtk_window_set_title ((GtkWindow*) main_window, "HELLO World");
+	gtk_window_set_title ((GtkWindow*) main_window, _ ("HELLO World"));
 #line 39 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	gtk_container_add ((GtkContainer*) main_window, (GtkWidget*) label);
 #line 41 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
@@ -125,7 +126,7 @@ my_app_real_activate (GApplication* base)
 	_g_object_unref0 (main_window);
 #line 31 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	_g_object_unref0 (label);
-#line 129 "Application.c"
+#line 130 "Application.c"
 }
 
 
@@ -146,7 +147,7 @@ my_app_main (gchar** args,
 	_g_object_unref0 (app);
 #line 46 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	return result;
-#line 150 "Application.c"
+#line 151 "Application.c"
 }
 
 
@@ -156,7 +157,7 @@ main (int argc,
 {
 #line 44 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	return my_app_main (argv, argc);
-#line 160 "Application.c"
+#line 161 "Application.c"
 }
 
 
@@ -167,7 +168,7 @@ my_app_class_init (MyAppClass * klass)
 	my_app_parent_class = g_type_class_peek_parent (klass);
 #line 22 "/home/ahmed/Workspace/gtk-hello/src/Application.vala"
 	((GApplicationClass *) klass)->activate = (void (*) (GApplication *)) my_app_real_activate;
-#line 171 "Application.c"
+#line 172 "Application.c"
 }
 
 

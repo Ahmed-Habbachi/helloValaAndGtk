@@ -1,0 +1,60 @@
+# Spanish translations for com.github.Ahmed-Habbachi.helloValaAndGtk package.
+# Copyright (C) 2018 THE com.github.Ahmed-Habbachi.helloValaAndGtk'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.Ahmed-Habbachi.helloValaAndGtk package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.Ahmed-Habbachi.helloValaAndGtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-19 21:51+0100\n"
+"PO-Revision-Date: 2018-10-19 21:51+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Application.vala:32
+msgid "Hello Again Wolrd!"
+msgstr ""
+
+#: src/Application.vala:37
+msgid "HELLO World"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in:3
+msgid "Hello Again"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in:4
+msgid "Hello World App"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in:5
+msgid "Proves that we can use Vala and Gtk"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in:8
+msgid "application-default-icon"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in:11
+msgid "Hello;World;Example;"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml.in:6
+msgid "Hello Vala And Gtk"
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml.in:7
+msgid "This is my simple training app to try out vala and GTK."
+msgstr ""
+
+#: data/com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml.in:9
+msgid ""
+"This is my simple training app to try out vala and GTK. Just writing this in "
+"my jurney to learn the basics of vala and GTK"
+msgstr ""

@@ -28,7 +28,8 @@ executable(
 #    join_paths('data', meson.project_name() + '.appdata.xml'),
 #    install_dir: join_paths(get_option('datadir'), 'metainfo')
 #)
-    
+
+
 #Translate and install our .desktop file
 i18n.merge_file(
     input: join_paths('data', meson.project_name() + '.desktop.in'),
@@ -47,3 +48,5 @@ i18n.merge_file(
     install: true,
     install_dir: join_paths(get_option('datadir'), 'metainfo')
 )
+
+subdir('po')

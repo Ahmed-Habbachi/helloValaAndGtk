@@ -70,10 +70,39 @@ build com.github.Ahmed-Habbachi.helloValaAndGtk@exe/src/Application.c: vala_COMP
 
 build com.github.Ahmed-Habbachi.helloValaAndGtk@exe/meson-generated_src_Application.c.o: c_COMPILER com.github.Ahmed-Habbachi.helloValaAndGtk@exe/src/Application.c
  DEPFILE = com.github.Ahmed-Habbachi.helloValaAndGtk@exe/meson-generated_src_Application.c.o.d
- ARGS = -Icom.github.Ahmed-Habbachi.helloValaAndGtk@exe -I. -I.. -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g -pthread
+ ARGS = -Icom.github.Ahmed-Habbachi.helloValaAndGtk@exe -I. -I.. -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -w -O0 -g '-DGETTEXT_PACKAGE="com.github.Ahmed-Habbachi.helloValaAndGtk"' -pthread
 
-build com.github.Ahmed-Habbachi.helloValaAndGtk: c_LINKER com.github.Ahmed-Habbachi.helloValaAndGtk@exe/meson-generated_src_Application.c.o | /usr/lib/x86_64-linux-gnu/libcairo.so.2.11510.0 /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.3611.0 /usr/lib/x86_64-linux-gnu/libcairo-gobject.a /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.5600.2 /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.4000.14 /usr/lib/x86_64-linux-gnu/libgio-2.0.a /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2200.30 /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11510.0 /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.2 /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.a /usr/lib/x86_64-linux-gnu/libglib-2.0.a /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.5600.2 /usr/lib/x86_64-linux-gnu/libcairo.a /usr/lib/x86_64-linux-gnu/libgobject-2.0.a /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.22810.1 /usr/lib/x86_64-linux-gnu/libpango-1.0.a /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2200.30 /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.4000.14
+build com.github.Ahmed-Habbachi.helloValaAndGtk: c_LINKER com.github.Ahmed-Habbachi.helloValaAndGtk@exe/meson-generated_src_Application.c.o | /usr/lib/x86_64-linux-gnu/libpango-1.0.a /usr/lib/x86_64-linux-gnu/libcairo-gobject.so.2.11510.0 /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.3611.0 /usr/lib/x86_64-linux-gnu/libglib-2.0.a /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.4000.14 /usr/lib/x86_64-linux-gnu/libcairo-gobject.a /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.22810.1 /usr/lib/x86_64-linux-gnu/libgobject-2.0.a /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.2200.30 /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2200.30 /usr/lib/x86_64-linux-gnu/libgio-2.0.a /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.2 /usr/lib/x86_64-linux-gnu/libcairo.so.2.11510.0 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.5600.2 /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.a /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.5600.2 /usr/lib/x86_64-linux-gnu/libcairo.a /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.4000.14
  LINK_ARGS = -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -Wl,--end-group
+
+build com.github.Ahmed-Habbachi.helloValaAndGtk.desktop: CUSTOM_COMMAND ../data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in
+ COMMAND = /usr/bin/python3 /usr/bin/meson --internal msgfmthelper ../data/com.github.Ahmed-Habbachi.helloValaAndGtk.desktop.in com.github.Ahmed-Habbachi.helloValaAndGtk.desktop desktop /home/ahmed/Workspace/gtk-hello/po
+ description = Generating$ com.github.Ahmed-Habbachi.helloValaAndGtk.desktop_merge$ with$ a$ custom$ command.
+
+build com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml: CUSTOM_COMMAND ../data/com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml.in
+ COMMAND = /usr/bin/python3 /usr/bin/meson --internal msgfmthelper ../data/com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml.in com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml xml /home/ahmed/Workspace/gtk-hello/po
+ description = Generating$ com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml_merge$ with$ a$ custom$ command.
+
+build meson-com.github.Ahmed-Habbachi.helloValaAndGtk-pot: CUSTOM_COMMAND 
+ COMMAND = /usr/bin/python3 /usr/bin/meson --internal commandrunner /home/ahmed/Workspace/gtk-hello /home/ahmed/Workspace/gtk-hello/build po /usr/bin/python3 /usr/bin/meson /usr/bin/python3 /usr/bin/meson --internal gettext pot --pkgname=com.github.Ahmed-Habbachi.helloValaAndGtk --extra-args=--directory=/home/ahmed/Workspace/gtk-hello@@--from-code=UTF-8
+ description = Running$ external$ command$ com.github.Ahmed-Habbachi.helloValaAndGtk-pot.
+ pool = console
+
+build com.github.Ahmed-Habbachi.helloValaAndGtk-pot: phony meson-com.github.Ahmed-Habbachi.helloValaAndGtk-pot
+
+build meson-com.github.Ahmed-Habbachi.helloValaAndGtk-gmo: CUSTOM_COMMAND 
+ COMMAND = /usr/bin/python3 /usr/bin/meson --internal commandrunner /home/ahmed/Workspace/gtk-hello /home/ahmed/Workspace/gtk-hello/build po /usr/bin/python3 /usr/bin/meson /usr/bin/python3 /usr/bin/meson --internal gettext gen_gmo
+ description = Running$ external$ command$ com.github.Ahmed-Habbachi.helloValaAndGtk-gmo.
+ pool = console
+
+build com.github.Ahmed-Habbachi.helloValaAndGtk-gmo: phony meson-com.github.Ahmed-Habbachi.helloValaAndGtk-gmo
+
+build meson-com.github.Ahmed-Habbachi.helloValaAndGtk-update-po: CUSTOM_COMMAND 
+ COMMAND = /usr/bin/python3 /usr/bin/meson --internal commandrunner /home/ahmed/Workspace/gtk-hello /home/ahmed/Workspace/gtk-hello/build po /usr/bin/python3 /usr/bin/meson /usr/bin/python3 /usr/bin/meson --internal gettext update_po --pkgname=com.github.Ahmed-Habbachi.helloValaAndGtk --extra-args=--directory=/home/ahmed/Workspace/gtk-hello@@--from-code=UTF-8
+ description = Running$ external$ command$ com.github.Ahmed-Habbachi.helloValaAndGtk-update-po.
+ pool = console
+
+build com.github.Ahmed-Habbachi.helloValaAndGtk-update-po: phony meson-com.github.Ahmed-Habbachi.helloValaAndGtk-update-po
 
 # Test rules
 
@@ -121,21 +150,27 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony com.github.Ahmed-Habbachi.helloValaAndGtk
+build all: phony com.github.Ahmed-Habbachi.helloValaAndGtk com.github.Ahmed-Habbachi.helloValaAndGtk.desktop com.github.Ahmed-Habbachi.helloValaAndGtk.appdata.xml
 
 default all
 
 build clean: phony meson-clean
 
-build meson-clean: CUSTOM_COMMAND PHONY
+build meson-clean-ctlist: CUSTOM_COMMAND PHONY
+ COMMAND = /usr/bin/python3 /usr/bin/meson --internal cleantrees /home/ahmed/Workspace/gtk-hello/build/meson-private/cleantrees.dat
+ description = Cleaning$ custom$ target$ directories.
+
+build clean-ctlist: phony meson-clean-ctlist
+
+build meson-clean: CUSTOM_COMMAND PHONY | clean-ctlist
  COMMAND = ninja -t clean
  description = Cleaning.
 
-build build.ninja: REGENERATE_BUILD ../meson.build meson-private/coredata.dat
+build build.ninja: REGENERATE_BUILD ../meson.build ../po/meson.build meson-private/coredata.dat
  pool = console
 
 build reconfigure: REGENERATE_BUILD PHONY
  pool = console
 
-build ../meson.build meson-private/coredata.dat: phony 
+build ../meson.build ../po/meson.build meson-private/coredata.dat: phony 
 

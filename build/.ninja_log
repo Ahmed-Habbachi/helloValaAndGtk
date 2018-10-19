@@ -4,3 +4,10 @@
 521	592	1539980329	com.github.Ahmed-Habbachi.helloValaAndGtk	79aec41fa95bb593
 2	317	0	meson-install	f15a61e962cba7e9
 0	164	0	meson-uninstall	5f0f8977f4c0dd8
+0	201	1539981498	build.ninja	1f381a18212c6227
+0	194	1539982122	build.ninja	1f381a18212c6227
+4	288	1539982136	com.github.Ahmed-Habbachi.helloValaAndGtk@exe/src/Application.c	7c213d381d8f31a2
+288	528	1539982137	com.github.Ahmed-Habbachi.helloValaAndGtk@exe/meson-generated_src_Application.c.o	69b31c78b9020fed
+528	596	1539982137	com.github.Ahmed-Habbachi.helloValaAndGtk	79aec41fa95bb593
+0	379	0	meson-com.github.Ahmed-Habbachi.helloValaAndGtk-pot	2df3674749a9bf88
+0	363	0	meson-com.github.Ahmed-Habbachi.helloValaAndGtk-update-po	5a506a9d566462d4
